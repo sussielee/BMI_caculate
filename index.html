@@ -1,0 +1,25 @@
+<html>
+<h1 style = "color: red; font-size:40px">BMI Calculator</h1>
+<p> student ID   </p> 
+<input id="weight"> <br> <br>
+<input id="height"> <br> <br>
+<button onclick = "calculate_BMI()" >Calculate</button> <br>
+<br>
+<div id= "123" style= "background-color:grey; width:300px; height:50px "></div>
+
+
+<script>
+var weight;
+var height;
+
+function calculate_BMI() {
+
+ weight = document.getElementById("weight").value;
+ height = document.getElementById("height").value;
+ bmi = weight/(height*height);
+ document.getElementById("123").innerHTML=bmi;
+  
+}
+</script>
+</html>
+
